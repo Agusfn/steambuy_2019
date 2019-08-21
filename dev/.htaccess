@@ -1,0 +1,6 @@
+Options +Indexes
+
+AuthType Basic
+AuthName "dev"
+AuthUserFile "/home/steambuy/.htpasswds/public_html/dev/passwd"
+require valid-user
