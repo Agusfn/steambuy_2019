@@ -56,8 +56,18 @@ $steam_sales_featured_items = 9;
      
         <link rel="stylesheet" href="global_design/font-awesome-4.1.0/css/font-awesome.min.css" type="text/css">
         <link rel="stylesheet" href="global_design/bootstrap-3.1.1/css/bootstrap.min.css" type="text/css">
-        <link rel="stylesheet" href="global_design/css/main.css?2.01" type="text/css">
+        <link rel="stylesheet" href="global_design/css/main.css?2.02" type="text/css">
         <link rel="stylesheet" href="design/css/main_page.css?3" type="text/css">
+
+        <style type="text/css">
+            .open-announcement {
+                background-color: #3c3c3c;
+                color: #EEE;
+                padding: 16px;
+                border: none;
+                margin-bottom: 30px
+            }
+        </style>
 
 		<script type="text/javascript" src="global_scripts/js/jquery-1.8.3.min.js"></script>
 		<script type="text/javascript" src="global_design/bootstrap-3.1.1/js/bootstrap.min.js"></script>
@@ -76,6 +86,11 @@ $steam_sales_featured_items = 9;
         	
             <div class="main_content">
 
+                <div class="alert alert-info open-announcement alert-dismissible">
+                    <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true" style="color: #EEE">&times;</span></button>
+                    <h3 style="font-size: 18px; margin-bottom: 10px">Habilitamos el servicio de compra de juegos en Steam!</h3>
+                    <p>Debido a los cambios recientes en agosto de 2019 en la tienda de Steam, decidimos volver a comenzar a ofrecer el servicio de reventa de juegos por los principales medios de pago en efectivo.</p>
+                </div>
 
                 <div class="panel panel-default" style="margin-bottom: 40px">
                     <div class="panel-body" style="padding: 35px 40px">

@@ -32,20 +32,20 @@ if(isAdminLoggedIn())
         
         <meta property="og:title" content="Ver mi pedido" />
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="http://steambuy.com.ar/pedido/" />
-        <meta property="og:image" content="http://steambuy.com.ar/global_design/img/logo-complete-meta.jpg" />
+        <meta property="og:url" content="https://steambuy.com.ar/pedido/" />
+        <meta property="og:image" content="https//steambuy.com.ar/global_design/img/logo-complete-meta.jpg" />
         <meta property="og:site_name" content="SteamBuy" />
         <meta property="og:description" content="Ver estado de mi pedido" />
         
         <meta name="twitter:card" content="summary">
-        <meta name="twitter:url" content="http://steambuy.com.ar/pedido/">
+        <meta name="twitter:url" content="https://steambuy.com.ar/pedido/">
         <meta name="twitter:title" content="Ver mi pedido">
         <meta name="twitter:description" content="Ver estado de mi pedido">
-        <meta name="twitter:image" content="http://steambuy.com.ar/global_design/img/logo-complete-meta.jpg">
+        <meta name="twitter:image" content="https://steambuy.com.ar/global_design/img/logo-complete-meta.jpg">
         
         <meta itemprop="name" content="Ver mi pedido">
         <meta itemprop="description" content="Ver estado de mi pedido">
-        <meta itemprop="image" content="http://steambuy.com.ar/global_design/img/logo-complete-meta.jpg">
+        <meta itemprop="image" content="https://steambuy.com.ar/global_design/img/logo-complete-meta.jpg">
         
         <link rel="shortcut icon" href="../favicon.ico"> 
         
