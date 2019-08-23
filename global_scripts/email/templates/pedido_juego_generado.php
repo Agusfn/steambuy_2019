@@ -20,7 +20,7 @@ El siguiente paso para recibir el juego es imprimir y abonar en cualquier sucurs
 Una vez abonado, el pago se acreditará instantáneamente en alguos casos, o en otros tomará entre 12 y 48 horas en acreditarse. El juego será enviado entre el día en que se acredita el pago y hasta 2 días después.<br/><br/>";
 
 if($data["product_sellingsite"] == 1 && $data["stock"] == 0) {
-	echo "<strong>Para recibir el juego deberás agregarnos a nuestra <a href='http://steamcommunity.com/id/steambuyarg/'>cuenta de Steam</a> a la lista de amigos o aceptar la solicitud que enviaremos a la cuenta proporcionada.</strong><br/><br/>";	
+	echo "<strong>Para recibir el juego deberás agregarnos a nuestra <a href='http://steamcommunity.com/id/agusfn/'>cuenta de Steam</a> a la lista de amigos o aceptar la solicitud que enviaremos a la cuenta proporcionada.</strong><br/><br/>";	
 }
 
 if($data["product_external_discount"] == 1) {

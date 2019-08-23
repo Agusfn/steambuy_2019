@@ -9,7 +9,7 @@ if($_SERVER["SERVER_ADDR"] == "::1" || $_SERVER["SERVER_ADDR"] == "127.0.0.1") /
 } else {
 	$mysql_server = "localhost";
 	$mysql_user = "steambuy";
-	$mysql_password = "3P4h$a{yJ=2YE4Natu;CThg&fQf^B%";
+	$mysql_password = "%#Tg@p6HH8w`Ee;KdW!t";
 	$mysql_database = "steambuy";
 }
 

@@ -332,7 +332,7 @@ if($session_auth && $product_exists && $productArsPrices != false && !$priceChan
 								if($product_type == 1 && $productData["product_sellingsite"] == 1 && $productData["product_has_limited_units"] == 0) {
 									echo "<div class='alert alert-info' style='margin-top: 15px;padding-bottom: 15px;'>Este juego se envía como Steam gift, deberás aceptar la solicitud de amistad de nuestra cuenta para recibirlo. 
 									Para adelantar el proceso, envíanos una solicitud de amistad de Steam a nuestra cuenta con la cuenta que quieres recibir el juego: 
-									<a href='http://steamcommunity.com/id/steambuyarg/' target='_blank'><span class='label label-primary'>http://steamcommunity.com/id/steambuyarg/</span></a></div>";	
+									<a href='http://steamcommunity.com/id/agusfn/' target='_blank'><span class='label label-primary'>http://steamcommunity.com/id/agusfn/</span></a></div>";	
 								}
 								
 								
