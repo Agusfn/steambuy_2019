@@ -99,7 +99,7 @@ $steam_sales_featured_items = 9;
                             <h3 style="margin-bottom: 25px">Formulario de compra de juegos de Steam</h3>
 
 
-                            <h1 style="margin-bottom: 10px; font-size: 15px">Compra juegos de Steam por cupón de pago en pesos argentinos (Rapipago, Pago Fácil, etc).</h1>
+                            <h1 style="margin-bottom: 10px; font-size: 15px">Compra juegos de Steam por cupón de pago en pesos argentinos (Rapipago, Pago Fácil, Bapro, Ripsa, etc).</h1>
                             <h5 style="margin-bottom: 30px;">Una vez abonado el cupón, te enviaremos el juego como Steam Gift.</h5>
 
                             <div class="row">
@@ -141,7 +141,7 @@ $steam_sales_featured_items = 9;
                                         Juego: <span id="game_name"></span> <span class="insert-url-label">Ingresar URL del juego</span>
                                     </h4>
                                     <h5 style="margin-bottom: 10px">
-                                        <span style="text-decoration: underline dotted" data-toggle="tooltip" data-placement="top" title="Precio pagando en Steam con tarjeta crédito (inc. IVA 21% gobierno)">Precio en Steam:</span> <span id="game_steam_real_price"></span> <span class="insert-url-label">Ingresar URL del juego</span>
+                                        <span style="text-decoration: underline dotted" data-toggle="tooltip" data-placement="top" title="Precio pagando en Steam con tarjeta crédito (inc. IVA 21% gobierno, la página de Steam NO muestra esto pero se lo cobran a todos en el resumen de la tarjeta)">Precio en Steam:</span> <span id="game_steam_real_price"></span> <span class="insert-url-label">Ingresar URL del juego</span>
                                     </h5>
                                     <h4 style="margin-bottom: 10px">
                                         Precio final: <span id="game_final_ars_price" style="color: #2772bf"></span> <span class="insert-url-label">Ingresar URL del juego</span>
