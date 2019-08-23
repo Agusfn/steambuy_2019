@@ -1,4 +1,5 @@
 <?php
+require_once("../../global_scripts/php/mysql_connection.php");
 require_once("../../global_scripts/php/steam_product_fetch.php");
 
 
@@ -15,6 +16,17 @@ if(isset($_POST["steam_url"]) && preg_match("#^(https?://)?store\.steampowered\.
 		$steamPriceReal = round($product->finalPrice * 1.21, 1);
 		$finalPrice = round($steamPriceReal * 1.15);
 
+
+		saveProductQuoteInDb(
+			$product->productUrl,
+			$product->name,
+			$product->firstPrice,
+			$product->finalPrice,
+			$product->discount,
+			$finalPrice
+		);
+
+
 		$response = [
 			"success" => true,
 			"data" => [
@@ -28,7 +40,7 @@ if(isset($_POST["steam_url"]) && preg_match("#^(https?://)?store\.steampowered\.
 	}
 	else {
 		$response["success"] = false;
-		$response["error_text"] = "Ocurrió un error cargando los datos del producto, por favor recarga la página o intentá más tarde.";
+		$response["error_text"] = "Ocurrió un error cargando los datos del producto, o el juego no tiene precio disponible.";
 	}
 
 }
@@ -40,3 +52,26 @@ else {
 
 header('Content-Type: application/json');
 echo json_encode($response);
+
+
+
+
+/**
+ * Save quotation in table 'quotes'
+ * @param  string $url              steam product url
+ * @param  string $name             product name
+ * @param  float $steamFirstPrice  
+ * @param  float $steamFinalPrice  
+ * @param  boolean $steamDiscount    
+ * @param  float $quotedFinalPrice 
+ * @return null                   
+ */
+function saveProductQuoteInDb($url, $name, $steamFirstPrice, $steamFinalPrice, $steamDiscount, $quotedFinalPrice)
+{
+	global $con;
+
+	$sql = "INSERT INTO `quotes` (`id`, `date`, `product_url`, `product_name`, `current_steam_firstprice_ars`, `current_steam_finalprice_ars`, `current_steam_discount`, `quoted_final_price_ars`) VALUES 
+	(NULL, NOW(), '".mysqli_real_escape_string($con, $url)."', '".mysqli_real_escape_string($con, $name)."', ".$steamFirstPrice.", ".$steamFinalPrice.", ".($steamDiscount ? 1 : 0).", ".$quotedFinalPrice.");";
+
+	mysqli_query($con, $sql);
+}
