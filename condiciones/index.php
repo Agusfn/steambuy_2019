@@ -120,7 +120,7 @@ if(isAdminLoggedIn())
 
                         <h4>Reembolsos y cambios</h4>
 
-                        <li>Si el producto comprado es en formato "Regalo de Steam", se puede realizar el reembolso de un producto únicamente si se cumplen las <a href="">condiciones de reembolso</a> de la tienda de Steam para dicho producto. En ese caso, SteamBuy puede realizar un cambio de productos, teniendo el comprador que abonar la diferencia de precio del nuevo producto si hubiera alguna. <strong>Si las condiciones de reembolso de Steam no se cumplen, no será posible hacer el reembolso.</strong></li>
+                        <li>Si el producto comprado es en formato "Regalo de Steam", se puede realizar el reembolso de un producto únicamente si se cumplen para dicho producto las <a href="https://store.steampowered.com/steam_refunds/?l=spanish" target="_blank">condiciones de reembolso</a> de la tienda de Steam, en el apartado "REEMBOLSOS EN REGALOS". En ese caso, SteamBuy puede realizar un cambio de productos, teniendo el comprador que abonar la diferencia de precio del nuevo producto si hubiera alguna. <strong>Si las condiciones de reembolso de Steam no se cumplen, no será posible hacer el reembolso.</strong></li>
                         <li>Si el producto comprado es en formato clave de activación, no se admiten reembolsos ni cambios una vez enviado el producto.</li>
 
 
