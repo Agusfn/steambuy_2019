@@ -31,20 +31,20 @@ if(isAdminLoggedIn())
         
         <meta property="og:title" content="Preguntas frecuentes" />
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="http://steambuy.com.ar/faq/" />
-        <meta property="og:image" content="http://steambuy.com.ar/global_design/img/logo-complete-meta.jpg" />
+        <meta property="og:url" content="https://steambuy.com.ar/faq/" />
+        <meta property="og:image" content="https://steambuy.com.ar/global_design/img/logo-complete-meta.jpg" />
         <meta property="og:site_name" content="SteamBuy" />
         <meta property="og:description" content="Si tienes alguna consulta aquí podrás revisar la lista completa de preguntas frecuentes." />
         
         <meta name="twitter:card" content="summary">
-        <meta name="twitter:url" content="http://steambuy.com.ar/faq/">
+        <meta name="twitter:url" content="https://steambuy.com.ar/faq/">
         <meta name="twitter:title" content="Preguntas frecuentes">
         <meta name="twitter:description" content="Si tienes alguna consulta aquí podrás revisar la lista completa de preguntas frecuentes.">
-        <meta name="twitter:image" content="http://steambuy.com.ar/global_design/img/logo-complete-meta.jpg">
+        <meta name="twitter:image" content="https://steambuy.com.ar/global_design/img/logo-complete-meta.jpg">
         
         <meta itemprop="name" content="Preguntas frecuentes">
         <meta itemprop="description" content="Si tienes alguna consulta aquí podrás revisar la lista completa de preguntas frecuentes.">
-        <meta itemprop="image" content="http://steambuy.com.ar/global_design/img/logo-complete-meta.jpg">
+        <meta itemprop="image" content="https://steambuy.com.ar/global_design/img/logo-complete-meta.jpg">
         
         
         <link rel="shortcut icon" href="../../favicon.ico">

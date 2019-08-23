@@ -36,20 +36,20 @@ $steam_sales_featured_items = 9;
         
         <meta property="og:title" content="Tienda de SteamBuy" />
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="http://steambuy.com.ar" />
-        <meta property="og:image" content="http://steambuy.com.ar/global_design/img/logo-complete-meta.jpg" />
+        <meta property="og:url" content="https://steambuy.com.ar" />
+        <meta property="og:image" content="https://steambuy.com.ar/global_design/img/logo-complete-meta.jpg" />
         <meta property="og:site_name" content="SteamBuy" />
         <meta property="og:description" content="SteamBuy es una tienda donde encontrarás una gran variedad de juegos digitales para PC con medios de pago accesibles." />
         
         <meta name="twitter:card" content="summary">
-        <meta name="twitter:url" content="http://steambuy.com.ar">
+        <meta name="twitter:url" content="https://steambuy.com.ar">
         <meta name="twitter:title" content="Tienda de SteamBuy">
         <meta name="twitter:description" content="SteamBuy es una tienda donde encontrarás una gran variedad de juegos digitales para PC con medios de pago accesibles.">
-        <meta name="twitter:image" content="http://steambuy.com.ar/global_design/img/logo-complete-meta.jpg">
+        <meta name="twitter:image" content="https://steambuy.com.ar/global_design/img/logo-complete-meta.jpg">
         
         <meta itemprop="name" content="Tienda de SteamBuy">
         <meta itemprop="description" content="SteamBuy es una tienda donde encontrarás una gran variedad de juegos digitales para PC con medios de pago accesibles.">
-        <meta itemprop="image" content="http://steambuy.com.ar/global_design/img/logo-complete-meta.jpg">
+        <meta itemprop="image" content="https://steambuy.com.ar/global_design/img/logo-complete-meta.jpg">
         
         
         <link rel="shortcut icon" href="favicon.ico?2"> 

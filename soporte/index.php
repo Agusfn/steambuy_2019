@@ -128,20 +128,20 @@ function displaySupportTree() {
         
         <meta property="og:title" content="Soporte" />
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="http://steambuy.com.ar/soporte/" />
-        <meta property="og:image" content="http://steambuy.com.ar/global_design/img/logo-complete-meta.jpg" />
+        <meta property="og:url" content="https://steambuy.com.ar/soporte/" />
+        <meta property="og:image" content="https://steambuy.com.ar/global_design/img/logo-complete-meta.jpg" />
         <meta property="og:site_name" content="SteamBuy" />
         <meta property="og:description" content="¿Tienes alguna consulta? Revisa en esta página los temas de ayuda o contáctanos." />
         
         <meta name="twitter:card" content="summary">
-        <meta name="twitter:url" content="http://steambuy.com.ar/soporte/">
+        <meta name="twitter:url" content="https://steambuy.com.ar/soporte/">
         <meta name="twitter:title" content="Soporte">
         <meta name="twitter:description" content="¿Tienes alguna consulta? Revisa en esta página los temas de ayuda o contáctanos.">
-        <meta name="twitter:image" content="http://steambuy.com.ar/global_design/img/logo-complete-meta.jpg">
+        <meta name="twitter:image" content="https://steambuy.com.ar/global_design/img/logo-complete-meta.jpg">
         
         <meta itemprop="name" content="Soporte">
         <meta itemprop="description" content="¿Tienes alguna consulta? Revisa en esta página los temas de ayuda o contáctanos.">
-        <meta itemprop="image" content="http://steambuy.com.ar/global_design/img/logo-complete-meta.jpg">
+        <meta itemprop="image" content="https://steambuy.com.ar/global_design/img/logo-complete-meta.jpg">
 
 
         <link rel="shortcut icon" href="../favicon.ico"> 

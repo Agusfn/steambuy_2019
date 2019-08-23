@@ -21,7 +21,7 @@ if(strpos($data["listed_keys"], "store.steampowered.com/account/ackgift/") !== f
 echo $data["listed_keys"];
 ?>
 <br/>
-Si recibiste un juego en formato de CD-KEY, en esta <a href='http://steambuy.com.ar/soporte/preguntas-frecuentes/#c24' target='_blank'>guía</a> podés ver cómo activarlo.<br/>
+Si recibiste un juego en formato de CD-KEY, en esta <a href='https://steambuy.com.ar/soporte/preguntas-frecuentes/#c24' target='_blank'>guía</a> podés ver cómo activarlo.<br/>
 
 <br/>
 <strong>Estaríamos agradecidos si dieras 'me gusta' y comentaras acerca de tu experiencia en nuestra <a href='http://facebook.com/steambuy' target='_blank'>página de Facebook</a>.</strong><br/><br/>

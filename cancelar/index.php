@@ -58,20 +58,20 @@ if(isset($_POST["order_id"]) && isset($_POST["order_password"]))
         
         <meta property="og:title" content="Cancelar un pedido" />
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="http://steambuy.com.ar/cancelar/" />
-        <meta property="og:image" content="http://steambuy.com.ar/global_design/img/logo-complete-meta.jpg" />
+        <meta property="og:url" content="https://steambuy.com.ar/cancelar/" />
+        <meta property="og:image" content="https://steambuy.com.ar/global_design/img/logo-complete-meta.jpg" />
         <meta property="og:site_name" content="SteamBuy" />
         <meta property="og:description" content="Si quieres cancelar un pedido de compra en SteamBuy utiliza este formulario." />
         
         <meta name="twitter:card" content="summary">
-        <meta name="twitter:url" content="http://steambuy.com.ar/cancelar/">
+        <meta name="twitter:url" content="https://steambuy.com.ar/cancelar/">
         <meta name="twitter:title" content="Cancelar un pedido">
         <meta name="twitter:description" content="Si quieres cancelar un pedido de compra en SteamBuy utiliza este formulario.">
-        <meta name="twitter:image" content="http://steambuy.com.ar/global_design/img/logo-complete-meta.jpg">
+        <meta name="twitter:image" content="https://steambuy.com.ar/global_design/img/logo-complete-meta.jpg">
         
         <meta itemprop="name" content="Cancelar un pedido">
         <meta itemprop="description" content="Si quieres cancelar un pedido de compra en SteamBuy utiliza este formulario.">
-        <meta itemprop="image" content="http://steambuy.com.ar/global_design/img/logo-complete-meta.jpg">
+        <meta itemprop="image" content="https://steambuy.com.ar/global_design/img/logo-complete-meta.jpg">
         
         
         <link rel="shortcut icon" href="../favicon.ico?2"> 

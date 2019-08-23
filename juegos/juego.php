@@ -60,20 +60,20 @@ if(is_numeric($_GET["id"])){
             
             <meta property="og:title" content="<?php echo $gameData["product_name"]; ?>" />
             <meta property="og:type" content="website" />
-            <meta property="og:url" content="http://steambuy.com.ar/juegos/<?php echo htmlspecialchars($_GET["id"]); ?>/" />
-            <meta property="og:image" content="http://steambuy.com.ar/data/img/game_imgs/<?php echo $gameData["product_mainpicture"]; ?>" />
+            <meta property="og:url" content="https://steambuy.com.ar/juegos/<?php echo htmlspecialchars($_GET["id"]); ?>/" />
+            <meta property="og:image" content="https://steambuy.com.ar/data/img/game_imgs/<?php echo $gameData["product_mainpicture"]; ?>" />
             <meta property="og:site_name" content="SteamBuy" />
             <meta property="og:description" content="<?php echo $shortDesc; ?>" />
             
             <meta name="twitter:card" content="summary">
-            <meta name="twitter:url" content="http://steambuy.com.ar/juegos/<?php echo htmlspecialchars($_GET["id"]); ?>/">
+            <meta name="twitter:url" content="https://steambuy.com.ar/juegos/<?php echo htmlspecialchars($_GET["id"]); ?>/">
             <meta name="twitter:title" content="<?php echo $gameData["product_name"]; ?>">
             <meta name="twitter:description" content="<?php echo $shortDesc; ?>">
-            <meta name="twitter:image" content="http://steambuy.com.ar/data/img/game_imgs/<?php echo $gameData["product_mainpicture"]; ?>">
+            <meta name="twitter:image" content="https://steambuy.com.ar/data/img/game_imgs/<?php echo $gameData["product_mainpicture"]; ?>">
             
             <meta itemprop="name" content="<?php echo $gameData["product_name"]; ?>">
             <meta itemprop="description" content="<?php echo $shortDesc; ?>">
-            <meta itemprop="image" content="http://steambuy.com.ar/data/img/game_imgs/<?php echo $gameData["product_mainpicture"]; ?>">
+            <meta itemprop="image" content="https://steambuy.com.ar/data/img/game_imgs/<?php echo $gameData["product_mainpicture"]; ?>">
  
             <?php
 		}

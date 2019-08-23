@@ -27,12 +27,12 @@ if($data["payment_method"] == 1) {
 	<strong>Titular:</strong> Rodrigo Fernandez Nuñez<br/>
 	<strong>CUIL:</strong> 23-35983336-9<br/>
 	<strong>Monto:</strong> &#36;".$data["order_ars_price"]." (Pesos argentinos)<br/><br/>
-	Una vez realizado el pago, informa el mismo en la sección de <a href='http://steambuy.com.ar/informar/' target='_blank'>informar pago</a> enviando una
+	Una vez realizado el pago, informa el mismo en la sección de <a href='https://steambuy.com.ar/informar/' target='_blank'>informar pago</a> enviando una
 	foto o imágen del comprobante de transferencia/depósito para que podamos identificarlo. Este se acredita de forma instantánea en horario hábil, y el código será enviado 
 	durante las siguientes 12 horas hábiles luego de haberse acreditado el pago.<br/><br/>";
 }
 echo "<strong>Recuerda que este pedido se cancelará automáticamente en 5 días si no se recibe el pago.</strong><br/>
-Ante cualquier duda revisa la página de <a href='http://steambuy.com.ar/soporte/' target='_blank'>soporte</a> o <a href='mailto:contacto@steambuy.com.ar'>contáctanos</a>.<br/>
+Ante cualquier duda revisa la página de <a href='https://steambuy.com.ar/soporte/' target='_blank'>soporte</a> o <a href='mailto:contacto@steambuy.com.ar'>contáctanos</a>.<br/>
 <br/>
 Un saludo,<br/>
 El equipo de SteamBuy";

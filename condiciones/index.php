@@ -33,20 +33,20 @@ if(isAdminLoggedIn())
         
         <meta property="og:title" content="Términos y condiciones" />
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="http://steambuy.com.ar/condiciones/" />
-        <meta property="og:image" content="http://steambuy.com.ar/global_design/img/logo-complete-meta.jpg" />
+        <meta property="og:url" content="https://steambuy.com.ar/condiciones/" />
+        <meta property="og:image" content="https://steambuy.com.ar/global_design/img/logo-complete-meta.jpg" />
         <meta property="og:site_name" content="SteamBuy" />
         <meta property="og:description" content="Página donde se encuentran los términos y condiciones de compra." />
         
         <meta name="twitter:card" content="summary">
-        <meta name="twitter:url" content="http://steambuy.com.ar/condiciones/">
+        <meta name="twitter:url" content="https://steambuy.com.ar/condiciones/">
         <meta name="twitter:title" content="Términos y condiciones">
         <meta name="twitter:description" content="Página donde se encuentran los términos y condiciones de compra.">
-        <meta name="twitter:image" content="http://steambuy.com.ar/global_design/img/logo-complete-meta.jpg">
+        <meta name="twitter:image" content="https://steambuy.com.ar/global_design/img/logo-complete-meta.jpg">
         
         <meta itemprop="name" content="Términos y condiciones">
         <meta itemprop="description" content="Página donde se encuentran los términos y condiciones de compra.">
-        <meta itemprop="image" content="http://steambuy.com.ar/global_design/img/logo-complete-meta.jpg">
+        <meta itemprop="image" content="https://steambuy.com.ar/global_design/img/logo-complete-meta.jpg">
         
         
         <link rel="shortcut icon" href="../favicon.ico?2"> 

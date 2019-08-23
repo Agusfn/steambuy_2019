@@ -334,7 +334,7 @@ if($admin == false) {
 												<td><?php if(floatval($orders["product_usdprice"]) > 0) echo $orders["product_usdprice"]; ?></td>
 												<td><?php echo $orders["product_arsprice"]; ?></td>
 												<td align="center"><?php 
-												if($orders["order_informedpayment"] == 1) echo "<a href='http://steambuy.com.ar/data/img/payment_receipts/".$orders["order_informed_image"]."' target='_blank'><strong>SI</strong></a>";
+												if($orders["order_informedpayment"] == 1) echo "<a href='https://steambuy.com.ar/data/img/payment_receipts/".$orders["order_informed_image"]."' target='_blank'><strong>SI</strong></a>";
 												else if($orders["order_informedpayment"] == 0) echo "No";
 												?></td>
 												<td align="center"><?php 

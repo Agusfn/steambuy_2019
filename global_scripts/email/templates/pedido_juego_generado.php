@@ -32,7 +32,7 @@ if($data["product_external_discount"] == 1) {
 	echo "<strong>Recuerda que este pedido se cancelará automáticamente en la fecha de vencimiento del pago si no se recibe el mismo.</strong><br/>";
 	
 }
-echo "Ante cualquier duda revisa la página de <a href='http://steambuy.com.ar/soporte/' target='_blank'>soporte</a> o <a href='mailto:contacto@steambuy.com.ar'>contáctanos</a>.<br/>
+echo "Ante cualquier duda revisa la página de <a href='https://steambuy.com.ar/soporte/' target='_blank'>soporte</a> o <a href='mailto:contacto@steambuy.com.ar'>contáctanos</a>.<br/>
 <br/>
 Un saludo,<br/>
 El equipo de SteamBuy";

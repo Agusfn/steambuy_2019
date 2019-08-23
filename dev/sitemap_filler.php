@@ -17,11 +17,11 @@ while($pData = mysqli_fetch_assoc($res)) {
 	
 
 	$url = $doc->createElement("url");
-	$loc = $doc->createElement("loc", "http://steambuy.com.ar/juegos/".$pData["product_id"]."/");
+	$loc = $doc->createElement("loc", "https://steambuy.com.ar/juegos/".$pData["product_id"]."/");
 	$changefreq = $doc->createElement("changefreq","monthly");
 	$priority = $doc->createElement("priority","0.8");
 	$image = $doc->createElement("image:image");
-	$imageloc = $doc->createElement("image:loc", "http://steambuy.com.ar/data/img/game_imgs/small/".$pData["product_mainpicture"]);
+	$imageloc = $doc->createElement("image:loc", "https://steambuy.com.ar/data/img/game_imgs/small/".$pData["product_mainpicture"]);
 	
 	$urlset->appendChild($url);
 	$url->appendChild($loc);

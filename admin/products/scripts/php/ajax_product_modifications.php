@@ -91,11 +91,11 @@ if($_POST["action"] == "reorder" && isset($_POST["products_array"]))
 		$urlset = $doc->documentElement;
 		
 		$url = $doc->createElement("url");
-		$loc = $doc->createElement("loc", "http://steambuy.com.ar/juegos/".mysqli_insert_id($con)."/");
+		$loc = $doc->createElement("loc", "https://steambuy.com.ar/juegos/".mysqli_insert_id($con)."/");
 		$changefreq = $doc->createElement("changefreq","monthly");
 		$priority = $doc->createElement("priority","0.8");
 		$image = $doc->createElement("image:image");
-		$imageloc = $doc->createElement("image:loc", "http://steambuy.com.ar/data/img/game_imgs/small/".$pdata["product_mainpicture"]);
+		$imageloc = $doc->createElement("image:loc", "https://steambuy.com.ar/data/img/game_imgs/small/".$pdata["product_mainpicture"]);
 		
 		$urlset->appendChild($url);
 		$url->appendChild($loc);

@@ -1,6 +1,6 @@
 <div class="footer">
 	<div class="footer_socialbtns">
-        <div class="gplus"><div class="g-plusone" data-annotation="inline" data-width="250" data-href="http://steambuy.com.ar"></div></div>
+        <div class="gplus"><div class="g-plusone" data-annotation="inline" data-width="250" data-href="https://steambuy.com.ar"></div></div>
         <script type="text/javascript">
           window.___gcfg = {lang: 'es'};
           (function() {

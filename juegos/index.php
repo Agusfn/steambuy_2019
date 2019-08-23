@@ -177,20 +177,20 @@ if($results > 0) {
         
         <meta property="og:title" content="Catálogo de juegos" />
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="http://steambuy.com.ar/juegos/" />
-        <meta property="og:image" content="http://steambuy.com.ar/global_design/img/logo-complete-meta.jpg" />
+        <meta property="og:url" content="https://steambuy.com.ar/juegos/" />
+        <meta property="og:image" content="https://steambuy.com.ar/global_design/img/logo-complete-meta.jpg" />
         <meta property="og:site_name" content="SteamBuy" />
         <meta property="og:description" content="Encuentra los juegos que buscas en el catálogo de juegos." />
         
         <meta name="twitter:card" content="summary">
-        <meta name="twitter:url" content="http://steambuy.com.ar/juegos/">
+        <meta name="twitter:url" content="https://steambuy.com.ar/juegos/">
         <meta name="twitter:title" content="Catálogo de juegos">
         <meta name="twitter:description" content="Encuentra los juegos que buscas en el catálogo de juegos.">
-        <meta name="twitter:image" content="http://steambuy.com.ar/global_design/img/logo-complete-meta.jpg">
+        <meta name="twitter:image" content="https://steambuy.com.ar/global_design/img/logo-complete-meta.jpg">
         
         <meta itemprop="name" content="Catálogo de juegos">
         <meta itemprop="description" content="Encuentra los juegos que buscas en el catálogo de juegos.">
-        <meta itemprop="image" content="http://steambuy.com.ar/global_design/img/logo-complete-meta.jpg">
+        <meta itemprop="image" content="https://steambuy.com.ar/global_design/img/logo-complete-meta.jpg">
         
         
         <link rel="shortcut icon" href="../favicon.ico?2"> 
