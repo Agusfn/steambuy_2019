@@ -107,7 +107,7 @@ $steam_sales_featured_items = 9;
                                 <div class="col-xs-6">
                                     <div class="form-group">
                                         <label>URL de juego en Steam <i class="fa fa-spinner fa-spin fa-fw" id="url_loading_spinner" style="display: none;"></i></label>
-                                        <input type="text" class="form-control" name="game_url" placeholder="Ej: https://store.steampowered.com/app/730/CounterStrike_Global_Offensive/">
+                                        <input type="text" class="form-control" name="game_url" placeholder="Ej: https://store.steampowered.com/app/220/HalfLife_2/">
                                         <span class="help-block" style="display: none;"></span>
                                     </div>
                                 </div>

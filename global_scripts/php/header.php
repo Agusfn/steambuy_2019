@@ -89,7 +89,7 @@
 
 
     <div class="header">
-		<a href="<?php echo ROOT_LEVEL; ?>"><img class="mainlogo" src="<?php echo ROOT_LEVEL; ?>global_design/img/header-logo.png" alt="steambuy logo" /></a>
+		<a href="<?php echo ROOT_LEVEL; ?>index.php"><img class="mainlogo" src="<?php echo ROOT_LEVEL; ?>global_design/img/header-logo.png" alt="steambuy logo" /></a>
         <div style="float:right">
             <div class="header_socialbtns">
                 <a href="http://facebook.com/steambuy" target="_blank"><i class="fa fa-facebook-square"></i></a><a href="http://twitter.com/steambuy" target="_blank"><i class="fa fa-twitter-square"></i></a><a href="http://plus.google.com/+SteamBuyAR" target="_blank"><i class="fa fa-google-plus-square"></i></a>
