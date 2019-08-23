@@ -90,73 +90,42 @@ if(isAdminLoggedIn())
         	
             <div class="main_content">
                 
-                <h3 class="main_title">Términos y condiciones de compra</h3>
+                <h3 class="main_title">Términos y condiciones del servicio</h3>
                 
                 <div class="tosbox">
                     <div style="font-weight:bold; text-align:center;">
                         Al usar este servicio usted acepta los siguientes términos y condiciones.<br />
-                        <span style="font-size:12px;">(Actualizado el 29/12/2015)</span>
+                        <span style="font-size:12px;">(Actualizado el 22/08/2019)</span>
                     </div>
                     <ol>
-                        <h4>Sitio, precios y privacidad:</h4>
-                            
-                        <li>SteamBuy ofrece un servicio de venta y de reventa a pedido de productos digitales, estos son videojuegos en formato digital, compras de saldo virtual (PayPal), o ítems de valor de un videojuego.</li>
-                        <li>La forma de comprar productos es generando "pedidos", un pedido por producto, estos guardan datos del producto y del comprador, información mencionada en el punto siguiente.</li>
-                        <li>El sitio pedirá información básica al comprador (nombre, apellido e email) al realizar un pedido, estos datos no serán compartidos con ninguna persona.</li>
-                        <li>SteamBuy se reserva el derecho de admisión al sitio respecto a quienes realicen acciones con intención de generar molestia, según la IP que se registre.</li>
-                        <li>El precio final de los productos es en Pesos argentinos. Si se trata de un producto por reventa o un envío de saldo, este precio se obtiene a partir de cálculos 
-                        realizados por el sitio considerando precio original y su moneda en su sitio de venta. Los cálculos varían según el tipo de producto en venta (Juegos o compras de saldo virtual).</li>
-                        
-    
-                        <h4>Formulacion de pedidos para juegos:</h4>
-                            
-                        <li>Se permite como máximo hasta 10 pedidos activos simultáneos (sean de juegos o compra de saldo virtual PayPal) por cada email.</li>
-                        <li>Los pedidos activos cuyos pagos no se registren a los 5 días de haberse creado expirarán y se cancelarán. Si el comprador hubiera pagado le corresponderá
-                        elegir otro/s producto/s por el mismo precio o un reembolso.</li>
-                        <li>Si el precio ingresado por el usuario en el formulario de compra difiere con el precio real del juego de la tienda especificada, se cancelará el pedido sin excepción.
-                        En caso de haberse pagado, al comprador le corresponderá un reembolso.</li>
-                        <li>Si un producto del catálogo posee un precio que difiere erróneamente del precio de su tienda original sin que este haya estado en ese precio en los ultimos días, o si surge un precio de tiempo muy limitado (menor a 3 horas) en otra tienda sea por un error u oferta instantánea,
-                        SteamBuy puede rechazar este pedido de pago (mostrando evidencia suficiente en un historial) y al comprador le corresponderá un reembolso.</li>
-    
-                        <h4>Pagos y envío de productos:</h4>
-                        
-                        <li>Los productos son enviados al correo electrónico proporcionado por el comprador durante el día en que se registra el pago del respectivo pedido. Si el pago es por cupón de pago,
-                        el pago toma entre 12 y 48 horas en acreditarse. En caso de transferencia bancaria o depósito, estas se acreditan en horarios hábiles únicamente, y serán enviados durante las próximas 12
-                        horas de haberse acreditado. <strong>(Excepto durante eventos de ofertas, ver puntos 21, 22 y 23)</strong></li>
-                        <li>Los juegos digitales se envían en tres formatos diferentes: Regalo de Steam, clave de activación, o link de activación de HumbleBundle.com. El formato lo determinará
-                        SteamBuy según la disponibilidad, y el comprador no reclamará este hecho.</li>
-                        <li>Si el comprador pide un juego que posee una oferta limitada en una tienda externa, el pago del mismo debe ser informado antes de que finalice, de esta manera SteamBuy 
-                        guardará el juego (lo "reservará") para ser enviado cuando se acredite su pago. Si el pago se acredita antes de que finalice la oferta, SteamBuy se compromete a enviar el producto
-                        haya informado o no el pago el comprador (Más información en el punto #).</li>
-                        <li>Si una clave de activación enviada no funciona, SteamBuy investigará el asunto para determinar si efectivamente la clave fue defectuosa. 
-                        Si este es el caso, al comprador le corresponderá un cambio de producto o un reembolso, o si está disponible, una reposición del mismo producto.</li>
-                        <li>Si existe alguna bonificación aplicable en la adquisición de productos en tiendas externas, estas le corresponderán a SteamBuy y el comprador no 
-                        reclamará este hecho.</li>
-                        <li>SteamBuy no se responsabilizará por los posibles problemas si un producto pedido ha sido enviado a un mail erroneamente proporcionado por el comprador. 
-                        Si el comprador lo pide, si se trata de un juego en formato de clave, esta se renviará al e-mail del comprador. Si se trata de una compra de saldo PayPal, se intentará 
-                        hacer el reembolso y reenvío del pago.</li>
-                        <li>SteamBuy se reserva el derecho de cancelar pedidos aún no acreditados ni enviados por motivos que considerará justificables.</li>
-                        <br /><a name="descuento"></a>
-                        <strong><li>Los informes de pago de juegos que poseen ofertas externas limitadas deben hacerse a más tardar 30 minutos antes de que finalice la oferta <strong>(excepto durante eventos de ofertas, ver puntos 21, 22 y 23)</strong>
-                        para que SteamBuy se comprometa a reservar y enviar el juego en oferta (esto no se aplica en ofertas que finalicen en la madrugada). De lo contrario, es probable que se pueda reservar, pero en caso de que no haya sido posible hacer la reserva
-                         o no se haya informado el pago, o se haya informado tarde, el comprador deberá pedir un reembolso o cambio de producto. </li>
-                        <li>En caso de que le corresponda al comprador un reembolso, los medios de reembolso son: Transferencia bancaria, Mercadopago, o Cuentadigital. 
-                        O, en lugar, el comprador puede elegir otro/s producto/s en venta de SteamBuy que sumen el monto pagado en pesos.</li>
-                        <li>En caso de solicitar un reembolso por algun problema, si el problema es evidente por parte del comprador, el monto a enviar por el reembolso será el monto pagado
-                        por el comprador restando la tarifa del servicio de pagos. Si, en lugar el problema fue por parte de SteamBuy, el monto a reembolsar enviado será el monto completo que el comprador pagó.</li></strong>
-                        <br/><br/>
-                        <strong>Reembolsos</strong>
-                        <li>El reembolso de un pedido podrá ser solicitado por el comprador (vía contacto), una vez acreditado su pago respectivo, únicamente en los siguientes casos: 
-                        <br/>•Si el comprador pierde una oferta externa limitada, dejándolo con saldo a favor. 
-                        <br/>•En caso de que SteamBuy no pueda brindar un producto solicitado en un pedido por causas no previstas.
-                        <br/><br/>
-                        No se realizan reembolsos por insatisfacción del comprador con respecto al producto o problemas de rendimiento con el mismo, ni por cualquier otro motivo a los ya nombrados, a menos que sea aceptado por consideración de SteamBuy. 
-                        El comprador debe estar al tanto del producto que está comprando.
-                        </li><br/><br/>
-                        <strong>Eventos de ofertas</strong>
-                        <li>Los eventos de ofertas son los días en los que la tienda de Steam realiza descuentos especiales masivos, tales como las ofertas de verano, las ofertas de invierno, las ofertas de primavera, etc.</li>
-                        <li><strong>Durante los eventos de ofertas, debido a la alta demanda, los pedidos pueden ser enviados hasta 48 horas luego de acreditado su pago.</strong></li>
-                        <li>Durante los eventos de ofertas, SteamBuy puede solicitar el informe de pago con más anticipación que lo indicado en el punto 17 para la reserva de productos en oferta, dichos tiempos son anunciados oportunamente antes de realizar la compra.</li>
+                        <h4>Términos generales</h4>
+
+                        <li>SteamBuy ofrece un servicio de reventa a pedido de licencias de software de videojuegos (productos) de la plataforma de Steam. Esto es, SteamBuy realiza la compra del mismo en la tienda de Steam y lo envía al comprador.</li>
+                        <li>El precio de venta final de cada producto ofrecido por SteamBuy al público, es un precio en pesos argentinos, determinado por el precio final del producto en la tienda de Steam (convertido a pesos en caso que fuera en dólares) más una comisión fija determinada por SteamBuy.</li>
+                        <li>Los pedidos se realizan desde el formulario de compra de juegos, en donde el comprador debe ingresar sus datos de contacto junto con la URL del producto deseado en la tienda de Steam.</li>
+                        <li>Al ingresar la URL en el formulario, el sitio obtendrá y mostrará los datos del producto (nombre y precio base) e intentará realizar una cotización del precio final del mismo a partir del precio de base. <strong>El pedido será válido única y exclusivamente si el producto existe en Steam con el precio de base obtenido inicialmente</strong>, de lo contrario el pedido se cancelará, y en caso de ser abonado, se deberá realizar un reembolso o cambio de productos.</li>
+                        <li>Adicionalmente SteamBuy vende productos en Stock (no de reventa) en el catálgo de productos, donde la operatoria de compra es la misma que por el formulario.</li>
+
+                        <h4>Envío de productos</h4>
+
+                        <li>Los envíos de los productos se realizan una vez que el pago de su pedido está acreditado, normalmente entre el mismo día de la acreditación y hasta dentro los siguientes 2 días.</li>
+                        <li>Los productos son enviados en formato Regalo de Steam (Steam Gift) hacia la cuenta de Steam indicada por el comprador al realizar el pedido en el formulario de compra. Para esto, <strong>previamente se debe vincular como "amigo de steam" a la cuenta de Steam proporcionada por SteamBuy que envia el juego y la cuenta del comprador que recibirá el juego</strong>. Los productos que no puedan ser enviados de esta manera no pueden ser vendidos por SteamBuy, a excepción de la venta de productos en Stock realizada desde el catálogo de productos.</li>
+                        <li>La cuenta de Steam proporcionada por el comprador para enviar el producto no debe tener una copia del mismo en su biblioteca de juegos, debido a que Steam no permite enviar un juego puntual a una cuenta que ya posee este juego. En caso que suceda esto se debe proveer de otra cuenta o cambiar el producto.</li>
+                        <li>Una vez recibido un producto en formato "Steam Gift" a una cuenta de Steam, el receptor puede: agregarlo a su biblioteca de juegos o rechazarlo. Se recomienda no rechazarlo debido a que se debe hacer el envío nuevamente de ese u otro producto, y se pueden perder ofertas que pudieran haber habido.</li>
+
+                        <h4>Ofertas</h4>
+
+                        <li>La tienda de Steam frecuentemente realiza ofertas de tiempo limitado de sus productos, y estas se reflejan en el cotizador del formulario de compra de SteamBuy. Sin embargo, <strong>es necesario que al menos 2 horas antes de la finalización de la oferta, el pago del producto esté acreditado y que se haya hecho la vinculación como "amigos de steam" a las cuentas de SteamBuy y del comprador</strong>.</li>
+                        <li>En caso que lo anterior no se cumpla, y se pierda una oferta, el comprador deberá solicitar un cambio de productos con su saldo a favor, pagando la diferencia si la hubiera.</li>
+
+                        <h4>Reembolsos y cambios</h4>
+
+                        <li>Si el producto comprado es en formato "Regalo de Steam", se puede realizar el reembolso de un producto únicamente si se cumplen las <a href="">condiciones de reembolso</a> de la tienda de Steam para dicho producto. En ese caso, SteamBuy puede realizar un cambio de productos, teniendo el comprador que abonar la diferencia de precio del nuevo producto si hubiera alguna. <strong>Si las condiciones de reembolso de Steam no se cumplen, no será posible hacer el reembolso.</strong></li>
+                        <li>Si el producto comprado es en formato clave de activación, no se admiten reembolsos ni cambios una vez enviado el producto.</li>
+
+
+                        <h4>Privacidad</h4>
+                        <li>SteamBuy almacena el nombre y apellido y el e-mail del comprador, junto con los datos del pedido. Estos datos no se comparten con ninguna otra persona o empresa.</li>
                     </ol>  
             	</div>
             

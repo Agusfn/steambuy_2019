@@ -146,7 +146,7 @@ if($session_auth && $product_exists && $productArsPrices != false && !$priceChan
 		
 		// Generar orden
 		if($purchase->createGameOrder($payment_method, $product_name, $product_id, $productData["product_sellingsite"], $productData["product_site_url"], 
-		$productData["product_external_limited_offer"], $usdPriceRef, $productFinalArsPrice, $buyer_name, $buyer_email, $buyer_steam_profile, $_SERVER["REMOTE_ADDR"], $couponCode, $couponDiscount))
+		$productData["product_external_limited_offer"], $usdPriceRef, 0, $productFinalArsPrice, $buyer_name, $buyer_email, $buyer_steam_profile, $_SERVER["REMOTE_ADDR"], $couponCode, $couponDiscount))
 		{
 			
 			$mail_data = array(

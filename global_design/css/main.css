@@ -4,7 +4,7 @@
 
 /********* Limpieza del documento **********/
 
-body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, a, abbr, acronym, address, del, dfn, em, img, q, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, dialog, figure, footer, header, hgroup, nav, section {
+body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, blockquote, a, abbr, acronym, address, del, dfn, em, img, q, dl, dt, dd, ol, ul, li, fieldset, form, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, dialog, figure, footer, header, hgroup, nav, section {
     margin: 0px;
     padding: 0px;
     border: 0px none;
@@ -114,12 +114,6 @@ a:hover{
 	cursor:default !important;
 }
 
-.form-control
-{
-	height: 32px;
-	padding: 4px 8px;
-	font-size: 15px;
-}
 
 h3 {
 	font-size:22px;	

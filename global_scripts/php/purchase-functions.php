@@ -250,7 +250,7 @@ class Purchase
 	}
 	
 	public function createGameOrder($order_paymethod, $product_name, $product_id_catalog, $product_sellingsite, $product_siteurl, $product_limitedoffer, $product_usdprice, 
-	$product_arsprice, $client_name, $client_email, $client_steamurl, $client_ip, $discount_coupon, $coupon_discounted_ammount) 
+		$product_cost_ars, $product_arsprice, $client_name, $client_email, $client_steamurl, $client_ip, $discount_coupon, $coupon_discounted_ammount) 
 	{
 		global $config;
 		
@@ -317,7 +317,7 @@ class Purchase
 		} else {
 			$product_fromcatalog = 0;
 			$product_limited_unit = 0;
-			$current_steam_price = $product_usdprice;
+			$current_steam_price = $product_cost_ars;
 			$send_method = 1;
 		}
 		
@@ -384,7 +384,7 @@ class Purchase
 
 		// Generar cupon a cta rfn07
 
-		$paymentTicketLink = get_url("https://www.cuentadigital.com/api.php?id=545437&precio=".$monto."&venc=5&codigo=".$codigo."&hacia=".$mail."&concepto=Venta+de+productos+digitales");		
+		$paymentTicketLink = get_url("https://www.cuentadigital.com/api.php?id=545437&precio=".$monto."&venc=3&codigo=".$codigo."&hacia=".$mail."&concepto=Venta+de+productos+digitales");		
 		
 		if(strpos($paymentTicketLink, "https://www.cuentadigital.com/verfactura.php?id=") !== false) { 
 			return $paymentTicketLink;

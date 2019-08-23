@@ -126,11 +126,11 @@ if(mysqli_num_rows($query) == 1) {
                     <h3 class="page-title">Mi pedido</h3>
                     
                     <?php
-					if($order_data["order_status"] == 1 && $order_data["product_limited_discount"] == 1 && $order_data["order_informedpayment"] == 0 && $order_data["order_confirmed_payment"] == 0) {
+					if($order_data["order_status"] == 1 && $order_data["product_limited_discount"] == 1 && $order_data["order_confirmed_payment"] == 0) {
 					?>
-                        <div class="alert alert-warning alert-dismissible" role="alert">
+                        <div class="alert alert-warning alert-dismissible" style="margin: 0 110px" role="alert">
                           <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                          El juego pedido tiene una oferta externa de tiempo limitado. Si se acerca el fin de la oferta, informa el pago antes de que termine para no perderla y reservar tu copia.
+                          El juego pedido tiene una oferta externa de tiempo limitado, si aún no lo pagaste, realiza el pago con tiempo para poder acceder a la oferta.
                         </div>
                     <?php
 					}
@@ -149,9 +149,9 @@ if(mysqli_num_rows($query) == 1) {
 									<span class='dotted' style='font-size:16px;color:#2E7EDA;' data-toggle='tooltip' data-placement='top' title='<?php 
 									if($order_data["order_paymentmethod"] == 1) {
 										if($order_data["order_confirmed_payment"] == 0) {
-											echo "Esperando la acreditación del pago. Una vez acreditado, el pedido normalmente se envía en el día.";	
+											echo "Esperando la acreditación del pago. Una vez acreditado, el pedido se envía en el día o hasta 2 días después de acreditado.";	
 										} else if($order_data["order_confirmed_payment"] == 1) {
-											echo "El pedido está cursado para ser enviado. Deberías estar recibiendo el pedido por e-mail en el día, o como máximo a las 48 hs siguientes de acreditado.";
+											echo "El pedido está cursado para ser enviado. Deberías estar recibiendo el pedido por e-mail en el día, o hasta a las 48 hs siguientes de acreditado.";
 										}
 									} else if($order_data["order_paymentmethod"] == 2) {
 										if($order_data["order_informedpayment"] == 0) {
@@ -164,7 +164,7 @@ if(mysqli_num_rows($query) == 1) {
 									?>'>Activo</span>
 									<?php
 								} else if($order_data["order_status"] == 2) {
-									echo "<span class='dotted' style='font-size:16px;color: #229E12;' data-toggle='tooltip' data-placement='top' title='Se han enviado los productos al e-mail registrado en el pedido el ".date("d/m/y H:i:s",strtotime($order_data["order_status_change"])).".'>Concretado</span>";	
+									echo "<span class='dotted' style='font-size:16px;color: #229E12;' data-toggle='tooltip' data-placement='top' title='Se han enviado los productos al e-mail/cuenta de Steam registrado en el pedido el ".date("d/m/y H:i:s",strtotime($order_data["order_status_change"])).".'>Concretado</span>";	
 								} else if($order_data["order_status"] == 3) {
 									echo "<span class='dotted' style='font-size:16px;color: #AE3333;' data-toggle='tooltip' data-placement='top' title='El pedido expiró o se canceló por otro motivo. Si tienes algun problema con el pedido contáctanos.'>Cancelado</span>";	
 								}
@@ -235,36 +235,11 @@ if(mysqli_num_rows($query) == 1) {
                             	<div class="order-detail-title">Oferta ext. limitada:</div>
                             	<div style="font-size:16px;"><?php
                                 if($order_data["product_limited_discount"] == 1) {
-									echo "<span class='dotted' data-toggle='tooltip' data-placement='top' title='El pedido tiene una oferta de reventa que termina en un horario en particular. Informa el pago antes del horario designado para no perder la oferta.'>Sí</span>";
+									echo "<span class='dotted' data-toggle='tooltip' data-placement='top' title='El pedido tiene una oferta de reventa que termina en un día y horario puntual.'>Sí</span>";
 								} else echo "No";
 								?></div>
                             </div>
-                            <?php
-							if($order_data["product_limited_discount"] == 1 || $order_data["order_paymentmethod"] == 2) {
-
-                                if($order_data["order_informedpayment"] == 1) {
-                                    ?>
-                                    <div style="float: right;margin: 0 110px 0 35px;">
-                                        <div class="order-detail-title" style="text-align:right">Fecha y hora informe:</div>
-                                        <div><?php echo date("d/m/y H:i:s", strtotime($order_data["order_informed_date"])); ?></div>
-                                    </div>
-                                    <?php
-                                }
-								?>
-                                <div style="float: right;margin-right: 110px;">
-                                    <div class="order-detail-title" style="text-align:right">Pago informado:</div>
-                                    <div style="font-size:16px;"><?php
-                                    if($order_data["order_informedpayment"] == 1) echo "Sí"; 
-									else {
-										echo "No";
-										if($order_data["order_status"] == 1) echo "&nbsp;&nbsp;<span style='font-size:13px'>(<a href='../informar/'>Informar</a>)</span>";
-									}
-									?></div>
-                                </div>
-                                <?php
-							}
-							
-							?>
+                            
 
                         </div>
                         
@@ -274,10 +249,24 @@ if(mysqli_num_rows($query) == 1) {
                             	<div style="font-size:16px;"><?php echo $order_data["buyer_name"]; ?></div>
                             </div>
                         	<div style="float:right;margin-right: 110px;">
-                            	<div class="order-detail-title" style="text-align:right">E-mail envío:</div>
+                            	<div class="order-detail-title" style="text-align:right">E-mail contacto/envío:</div>
                             	<div style="font-size:16px;"><?php echo $order_data["buyer_email"]; ?></div>
                             </div>
                         </div>
+
+
+                        <?php
+                        if($order_data["buyer_steam_url"] != "") {
+                        ?>
+                        <div class="clearfix" style="margin-top:40px;">
+                            <div style="float: left;margin-left: 110px;">
+                                <div class="order-detail-title">Cuenta Steam a enviar producto:</div>
+                                <div style="font-size:16px;"><a href="<?php echo $order_data["buyer_steam_url"]; ?>" target="_blank"><?php echo $order_data["buyer_steam_url"]; ?></a></div>
+                            </div>
+                        </div>
+                        <?php
+                        }   
+                        ?>
                     </div>
                     <?php
 				}

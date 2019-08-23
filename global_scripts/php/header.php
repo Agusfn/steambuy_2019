@@ -51,13 +51,13 @@
             if($admin == true) {
                 ?>
 				<div class="btn-group">
-					<a href="<?php echo ROOT_LEVEL . "admin/"; ?>" class="btn btn-primary">Panel de admin</a>
+					<a href="<?php echo ROOT_LEVEL."admin/pedidos.php?type=1"; ?>" class="btn btn-primary">Pedidos activos</a>
                     <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
                         <span class="caret"></span>
                         <span class="sr-only">Toggle Dropdown</span>
                     </button>
                     <ul class="dropdown-menu" role="menu">
-                        <li><a href="<?php echo ROOT_LEVEL."admin/pedidos.php?type=1"; ?>">Pedidos activos</a></li>
+                        <li><a href="<?php echo ROOT_LEVEL . "admin/"; ?>">Panel admin</a></li>
                         <li><a href="<?php echo ROOT_LEVEL."admin/pedidos.php?type=2"; ?>">Pedidos concretados</a></li>
                         <li><a href="<?php echo ROOT_LEVEL."admin/pedidos.php?type=3"; ?>">Pedidos cancelados</a></li>
                         <li class="divider"></li>
@@ -71,14 +71,14 @@
             ?>
 				<div class="btn-group">
                     <a href="<?php echo ROOT_LEVEL."pedido/"; ?>" class="btn btn-primary">Mi pedido</a>
-                    <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+                    <?php /*<button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
                         <span class="caret"></span>
                         <span class="sr-only">Toggle Dropdown</span>
                     </button>
                     <ul class="dropdown-menu" role="menu">
                         <li><a href="<?php echo ROOT_LEVEL."informar/"; ?>">Informar pago</a></li>
                         <li><a href="<?php echo ROOT_LEVEL."cancelar/"; ?>">Cancelar pedido</a></li>
-                    </ul>
+                    </ul> */ ?>
                 </div>
             <?php	
             }

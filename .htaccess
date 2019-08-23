@@ -15,6 +15,8 @@ RewriteRule ^(.*)$ https://%1/$1 [R=301,L]
 
 # http a htttps
  RewriteCond %{HTTPS} !=on
+ RewriteCond %{HTTP_HOST} !=localhost
+ RewriteCond %{HTTP_HOST} !=sb.test
  RewriteRule ^.*$ https://%{SERVER_NAME}%{REQUEST_URI} [R,L]
 
 

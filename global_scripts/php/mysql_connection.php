@@ -5,11 +5,11 @@ if($_SERVER["SERVER_ADDR"] == "::1" || $_SERVER["SERVER_ADDR"] == "127.0.0.1") /
 	$mysql_server = "localhost";
 	$mysql_user = "root";
 	$mysql_password = "20596";
-	$mysql_database = "steambuy_av";
+	$mysql_database = "steambuy_legacy_db";
 } else {
 	$mysql_server = "localhost";
 	$mysql_user = "steambuy";
-	$mysql_password = "pqRw47vKeLimaQj";
+	$mysql_password = "3P4h$a{yJ=2YE4Natu;CThg&fQf^B%";
 	$mysql_database = "steambuy";
 }
 

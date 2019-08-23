@@ -8,7 +8,7 @@ $(document).ready(function(e) {
 	
 	// Obtener precios de la tienda de steam del momento, via ajax.
 	
-	var url_list = [];
+	/*var url_list = [];
 	$("a.product_url").each(function( index ) {
   		url_list.push($(this).attr("href"));
 	});
@@ -28,7 +28,7 @@ $(document).ready(function(e) {
 			$(".steam_fetch_loading").hide();
 		}
 			
-	});
+	});*/
 		
 
 	

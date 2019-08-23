@@ -171,11 +171,11 @@ if($product_exists && $productFinalArsPrice) {
                                             <p class="list-group-item-text">Abona en <strong>Rapipago</strong>, <strong>Pago Fácil</strong>, <strong>Provincia Pagos</strong>, <strong>Cobro Express</strong> u otras sucursales 
                                             presentando un cupón de pago. Luego de entre 1 y 48 hs se acreditará el pago y recibirás el juego. </p>
                                         </a>
-                                        <a href="javascript:void(0);" class="list-group-item" id="payoption2">
+                                        <?php /*<a href="javascript:void(0);" class="list-group-item" id="payoption2">
                                             <div style="height: 25px;"><h4 class="list-group-item-heading">Transferencia bancaria</h4></div>
                                             <p class="list-group-item-text">Realiza un depósito bancario o haz una transferencia por home banking sin moverte de tu casa. Entre 1-24hs luego de acreditarse recibirás el juego.</p>
                                             <div class="banktransfer-discount-tag">-$<?php echo $transferDiscount; ?> dto.</div>
-                                        </a>
+                                        </a>*/ ?>
                                     </div>
                                 </div>
                             

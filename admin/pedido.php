@@ -82,21 +82,21 @@ if(isset($_GET["orderid"])) {
 										echo "<div class='radio'><label><input type='radio' name='expiration_type' value='offer_end'>Oferta externa limitada finalizada</label></div>"; 
 									} ?>
                                 </div>
-                                <div class="inform_status_box">
+                                <!--div class="inform_status_box">
                                 	<?php
-									if($orderData["order_informedpayment"] == 0) {
+									/*if($orderData["order_informedpayment"] == 0) {
 										?>
                                 		<div class="radio"><label><input type="radio" name="inform_status" value="no_inform">No se informó el pago</label></div>
                                     	<?php
-									}
-									if($orderData["order_informedpayment"] == 1) {
+									}*/
+									/*if($orderData["order_informedpayment"] == 1) {
 										?>
                                         <div class="radio"><label><input type="radio" name="inform_status" value="invalid_inform">Comprobante inválido</label></div>
                                         <div class="radio"><label><input type="radio" name="inform_status" value="late_inform">Informó tarde</label></div>                                        	
 										<?php
-									}
+									}*/
 									?>
-                                </div>
+                                </div-->
                             </div>
                             <div id="offer_end_time">Momento de finalización de oferta:
                             <input type="text" class="form-control" placeholder="Ej: jueves 21 a las 15 horas ó 21/05/15 15hs" /></div>
@@ -178,7 +178,7 @@ if(isset($_GET["orderid"])) {
                                     <li><a href="javascript:void(0);" id="change_buyer_name">Cambiar nombre del comprador</a></li>
                               	</ul>
                            	</div>
-                            <?php if($orderData["product_limited_discount"] == 1 && $orderData["order_reserved_game"] == 0) echo "<button class='btn btn-primary' style='margin-left: 40px;' id='opt_reserveorder'>Marcar como reservado</button>"; ?>
+                            <?php /*if($orderData["product_limited_discount"] == 1 && $orderData["order_reserved_game"] == 0) echo "<button class='btn btn-primary' style='margin-left: 40px;' id='opt_reserveorder'>Marcar como reservado</button>";*/ ?>
 							<button class="btn btn-primary active" id="opt_toggle_notify" data-toggle="tooltip" data-placement="bottom" title="Informar por e-mail: Activo"><span class="glyphicon glyphicon-envelope"></span></button>                            
                             <div class="btn-group" style="float:right;margin-right: 30px;">
                                 <button class="btn btn-success" id="opt_concreteorder">Concretar pedido</button>
@@ -248,8 +248,8 @@ if(isset($_GET["orderid"])) {
 							?></td>
                     	</tr>
                         <tr>
-							<td style="font-size:16px;"><strong>Precio USD:</strong> <?php if($orderData["product_usdprice"] > 0) echo $orderData["product_usdprice"]; ?></td>
-                            <td style="font-size:16px;"><strong>Precio ARS:</strong> $<?php echo $orderData["product_arsprice"]; ?></td>
+							<td style="font-size:16px;"><strong>Precio Steam:</strong> <?php echo $orderData["product_cur_steam_price"]; ?> ARS</td>
+                            <td style="font-size:16px;"><strong>Precio final:</strong> $<?php echo $orderData["product_arsprice"]; ?> ARS</td>
                             <td><strong>Sitio de venta:</strong> <a href="<?php echo $orderData["product_site_url"]; ?>"><img src="../global_design/img/icons/<?php 
 							if($orderData["product_sellingsite"] == 1) echo "steam"; 
 							else if($orderData["product_sellingsite"] == 2) echo "amazon";

@@ -11,6 +11,8 @@
 .product_name {
 	font-size: 20px;
 	color: #444;
+overflow: hidden;
+max-width: 460px;	
 }
 
 

@@ -182,24 +182,30 @@ if($count[0] > 0) {
                         <?php
                         if($count[0] > 0) echo "<span style='font-size:14px;'>Mostrando página <strong>".$current_real_pg."</strong> de <strong>".$totalpages."</strong></span>";
                         ?>
-                        <div style="margin-top:3px;"><a href="javascript:void(0);" id="today_payments">Ver pagos de hoy</a></div>
-                        <div id="today_payments_box"><?php
-
-						if($config["payments_last_revised"] != date("d-m-Y") || $config["today_payments"] == "") {
-							echo "No se han acreditado pagos del sitio hoy";
-						} else {
-							$res1 = mysqli_query($con, "SELECT COUNT(*) FROM `cd_payments` WHERE `date`='".date("Y-m-d")."'");
-							$today_payments = mysqli_fetch_row($res1);
-
-							echo "Pagos totales de hoy: <strong>".$today_payments[0]."</strong><br/><br/>";
-							echo "
-							<div>
-								<div style='float:left;margin-right:10px;'><table style='width:330px;'>".$config["today_payments_names"]."</table></div>
-								<div style='float:right;'><table>".$config["today_payments"]."</table></div>
-							</div>";
-						}
                         
-                        ?></div>
+                        <?php /*
+                        <div style="margin-top:3px;"><a href="javascript:void(0);" id="today_payments">Ver pagos de hoy</a></div>
+                        <div id="today_payments_box">
+	                        <?php
+
+							if($config["payments_last_revised"] != date("d-m-Y") || $config["today_payments"] == "") {
+								echo "No se han acreditado pagos del sitio hoy";
+							} else {
+								$res1 = mysqli_query($con, "SELECT COUNT(*) FROM `cd_payments` WHERE `date`='".date("Y-m-d")."'");
+								$today_payments = mysqli_fetch_row($res1);
+
+								echo "Pagos totales de hoy: <strong>".$today_payments[0]."</strong><br/><br/>";
+								echo "
+								<div>
+									<div style='float:left;margin-right:10px;'><table style='width:330px;'>".$config["today_payments_names"]."</table></div>
+									<div style='float:right;'><table>".$config["today_payments"]."</table></div>
+								</div>";
+							}
+	                        
+	                        ?>
+                        </div>
+                        */
+                       	?>
                     </div>
 
 					<?php
@@ -224,16 +230,16 @@ if($count[0] > 0) {
                         <?php
 					}
 					?>
-                    <div class="steam_fetch_loading">Cargando precios de Steam</div>
+                    <!--div class="steam_fetch_loading">Cargando precios de Steam</div-->
 
             	</div>
                 
             	<table class="table table-striped table-condensed table-bordered data_table of_hidden orders_table">
-                	<col width='26px'><col width="53px"><col width="74px"><col width="40px"><col width="45px"><col width="210px"><col width="40px"><col width="30px"><col width="44px"><col width="45px"><col width="54px"><col width="179px"><col width="44px"><col width="44px"><col width="49px">             
+                	<col width='26px'><col width="63px"><col width="74px"><col width="40px"><col width="45px"><col width="250px"><col width="40px"><col width="64px"><col width="45px"><col width="64px"><col width="217px"><col width="49px">             
                     <thead>
                     	<tr style="font-size:13px; <?php if($type == 2) echo "background-color: rgba(210, 255, 186, 1);";
 						else if($type == 3) echo "background-color: rgba(255, 222, 217, 1);"; ?>">
-                        	<th><?php if($type == 1) { ?><input type="checkbox" id="order_maincheckbox"/><?php } ?></th><th>ID</th><th>Fecha</th><th>Cat.<br/>ID</th><th>Stock</th><th>Nombre</th><th>Sitio</th><th><span style="font-size:10px;">Stm.<br/>Price</span></th><th style="text-align:center">USD</th><th>Desc.<br/>Lim.</th><th style="text-align:center">ARS</th><th>Correo</th><th>Infor<br/>mado</th><th>Reser<br/>vado</th><th>Medio</th>
+                        	<th><?php if($type == 1) { ?><input type="checkbox" id="order_maincheckbox"/><?php } ?></th><th>ID</th><th>Fecha</th><th>Cat.<br/>ID</th><th>Stock</th><th>Nombre</th><th>Sitio</th><th style="text-align:center">Steam</th><th>Desc.<br/>Lim.</th><th style="text-align:center">Final</th><th>Correo</th><th>Medio</th>
                         </tr>
                     </thead>
                 	<tbody>
@@ -265,8 +271,7 @@ if($count[0] > 0) {
 									else if($order["product_sellingsite"] == 4) echo "bundlestars";
 									else if($order["product_sellingsite"] == 5) echo "origin";
 									?>_22x22.png"/></a></td>
-                                    <td><span class="steam_price"></span></td>
-									<td><span style='font-size:13px;'><?php if($order["product_usdprice"] != 0) echo $order["product_usdprice"]; ?></span></td>
+									<td><span style='font-size:13px;'><?php echo $order["product_cur_steam_price"]; ?></span></td>
 									<td align="center" style="font-size:15px;"><?php 
 									if($order["product_limited_discount"] == 0) echo "No";
 									else if($order["product_limited_discount"] == 1) echo "<strong>SI</strong>";
@@ -283,16 +288,6 @@ if($count[0] > 0) {
 									
 									?></td>
 									<td style="font-size:13px;"><span class="order_email"><?php echo $order["buyer_email"]; ?></span></td>
-									<td align="center" style="font-size:15px;"><?php 
-									if($order["product_limited_discount"] == 1 || $order["order_paymentmethod"] == 2) {
-										if($order["order_informedpayment"] == 0) echo "No";
-										if($order["order_informedpayment"] == 1) echo "<a href='../data/img/payment_receipts/".$order["order_informed_image"]."' target='_blank'><strong>SI</strong></a>";
-									} ?></td>
-									<td align="center" style="font-size:15px;"><?php 
-									if($order["product_limited_discount"] == 1) {
-										if($order["order_reserved_game"] == 0) echo "No";
-										if($order["order_reserved_game"] == 1) echo "<strong>SI</strong>";
-									} ?></td>
 									<td align="center"><?php 
 									if($order["order_paymentmethod"] == 1) echo "<a href='".$order["order_purchaseticket"]."'><img src='design/img/boleta.png'/></a>";
 									else if($order["order_paymentmethod"] == 2) echo "<img src='design/img/transferencia.png'/>";

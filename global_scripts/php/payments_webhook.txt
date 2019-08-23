@@ -1,0 +1,23 @@
+22/08/2019 01:24:51. Pagos registrados:. 
+	Pagos saltados ya registrados: 0. Pagos saltados no del sitio: 0.
+	Pagos totales: 0
+22/08/2019 01:25:14. Pagos registrados:0. 
+	Pagos saltados ya registrados: 0. Pagos saltados no del sitio: 0.
+	Pagos totales: 0
+22/08/2019 01:25:43. Pagos registrados:0. Pagos saltados ya registrados: 0. Pagos saltados no del sitio: 0. Pagos totales: 0
+22/08/2019 01:25:47. Pagos registrados:0. Pagos saltados ya registrados: 0. Pagos saltados no del sitio: 0. Pagos totales: 0
+22/08/2019 01:25:47. Pagos registrados:0. Pagos saltados ya registrados: 0. Pagos saltados no del sitio: 0. Pagos totales: 0
+22/08/2019 01:25:47. Pagos registrados:0. Pagos saltados ya registrados: 0. Pagos saltados no del sitio: 0. Pagos totales: 0
+22/08/2019 01:25:47. Pagos registrados:0. Pagos saltados ya registrados: 0. Pagos saltados no del sitio: 0. Pagos totales: 0
+22/08/2019 01:25:48. Pagos registrados:0. Pagos saltados ya registrados: 0. Pagos saltados no del sitio: 0. Pagos totales: 0
+22/08/2019 01:26:08. Pagos registrados: 0. Pagos ya registrados: 0. Pagos no del sitio: 0. Pagos totales: 0
+22/08/2019 01:26:08. Pagos registrados: 0. Pagos ya registrados: 0. Pagos no del sitio: 0. Pagos totales: 0
+22/08/2019 01:26:08. Pagos registrados: 0. Pagos ya registrados: 0. Pagos no del sitio: 0. Pagos totales: 0
+22/08/2019 01:26:08. Pagos registrados: 0. Pagos ya registrados: 0. Pagos no del sitio: 0. Pagos totales: 0
+22/08/2019 01:43:25. Registrados: 0. Ya registrados: 0. No del sitio: 0. Checksum failed: 1. Totales: 0
+22/08/2019 01:47:41. Registrados: 0. Ya registrados: 0. No del sitio: 0. Checksum failed: 1. Totales: 0
+22/08/2019 01:49:33. Registrados: 0. Ya registrados: 1. No del sitio: 0. Checksum failed: 0. Totales: 0
+22/08/2019 01:52:11. Registrados: 0. Ya registrados: 1. No del sitio: 0. Checksum failed: 0. Totales: 0
+22/08/2019 01:52:53. Registrados: 0. Ya registrados: 1. No del sitio: 0. Checksum failed: 0. Totales: 0
+22/08/2019 01:53:59. Registrados: 1. Ya registrados: 0. No del sitio: 0. Checksum failed: 0. Totales: 0
+22/08/2019 01:54:06. Registrados: 0. Ya registrados: 1. No del sitio: 0. Checksum failed: 0. Totales: 0
