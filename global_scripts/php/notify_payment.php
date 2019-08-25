@@ -22,6 +22,7 @@ $lines = explode("\n", $requestBody);
 $lines = array_filter($lines);
 
 
+$totalPayments = 0;
 $registeredPayments = 0;
 $alreadyRegistered = 0;
 $nonWebsitePayments = 0;
@@ -50,6 +51,8 @@ foreach($lines as $line)
 
 	if($operationClass != 1)
 		continue;
+
+	$totalPayments++;
 
 	if(!checkCheckSum($checkSum, $operationClass, $paymentData[1].$paymentData[2], $paymentData[3], $barCode, $reference, $uniqueOperationCode)) {
 		$checksumFailed++;
@@ -90,7 +93,7 @@ foreach($lines as $line)
 }
 
 
-file_put_contents("payments_webhook.txt", date("d/m/Y h:i:s").". Registrados: ".$registeredPayments.". Ya registrados: ".$alreadyRegistered.". No del sitio: ".$nonWebsitePayments.". Checksum failed: ".$checksumFailed.". Totales: ".(sizeof($lines)-1)."\r\n", FILE_APPEND);
+file_put_contents("payments_webhook.txt", date("d/m/Y H:i:s").". Registrados: ".$registeredPayments.". Ya registrados: ".$alreadyRegistered.". No del sitio: ".$nonWebsitePayments.". Checksum failed: ".$checksumFailed.". Totales: ".$totalPayments.". Operaciones: ".(sizeof($lines)-1)."\r\n", FILE_APPEND);
 
 echo "OK";
 

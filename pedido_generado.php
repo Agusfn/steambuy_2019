@@ -102,7 +102,7 @@ else {
                     El producto será enviado en formato <strong>regalo de Steam</strong> durante el día en que se acredita el pago, o hasta 2 días después de acreditado. Podés ver el estado de tu pago en el <a href="https://www.cuentadigital.com/area.php?name=Search&query=<?php echo $split[1]; ?>" target="_blank">siguiente enlace</a>, que también se te ha enviado por e-mail.</div> 
 
 					<div class='alert alert-info' style='margin-top: 15px;padding-bottom: 15px;'>Este juego se envía como regalo de Steam, para que podamos enviarlo necesitamos que agregues a nuestra cuenta de Steam como amigo. Envíanos una solicitud de amistad con la cuenta que quieres recibir el juego:
-					<a href='http://steamcommunity.com/id/agusfn/' target='_blank'><span class='label label-primary'>http://steamcommunity.com/id/agusfn/</span></a></div>
+					<a href='http://steamcommunity.com/id/steambuyarg/' target='_blank'><span class='label label-primary'>http://steamcommunity.com/id/steambuyarg/</span></a></div>
 
                     <?php
 					if($orderData["product_limited_discount"] == 1) 
