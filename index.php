@@ -100,7 +100,7 @@ $steam_sales_featured_items = 9;
 
 
                             <h1 style="margin-bottom: 10px; font-size: 15px">Compra juegos de Steam por cupón de pago en pesos argentinos (Rapipago, Pago Fácil, Bapro, Ripsa, etc).</h1>
-                            <h5 style="margin-bottom: 30px;">Una vez abonado el cupón, te enviaremos el juego como Steam Gift.</h5>
+                            <h5 style="margin-bottom: 30px;">Para saber cómo obtener el precio final de un juego o cómo comprarlo, <a href="soporte/preguntas-frecuentes/#como-comprar-juego-formulario" target="_blank">revisa la siguiente guía</a>.</h5>
 
                             <div class="row">
                                 <div class="col-xs-6">
