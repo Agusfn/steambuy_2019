@@ -21,6 +21,7 @@ $(document).ready(function(e) {
 	}*/
 
 
+
 	$(".cpg-product").mouseenter(function(e) {
 		$(this).children(".cpg-product-overlay").stop().animate({opacity:"0.35"}, 200, "swing");
 		
@@ -124,6 +125,12 @@ $(document).ready(function(e) {
     });
 
 
+    // Check if we have a steam URL get param
+	var url = new URL(window.location.href);
+	var steamurl = url.searchParams.get("steamurl");
+	if(steamurl && validSteamUrl(steamurl)) {
+		$("input[name=game_url]").val(steamurl).trigger("change");
+	}
 
   
 });
@@ -286,3 +293,9 @@ var delay = (function(){
   timer = setTimeout(callback, ms);
  };
 })();
+
+
+function validSteamUrl(url) {
+	var pattern = /^(https?:\/\/)?store\.steampowered\.com\/(app|sub|bundle)\/([0-9]{1,10})(\/.*)?$/i;
+	return pattern.test(url);
+}
