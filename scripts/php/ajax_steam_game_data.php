@@ -13,8 +13,17 @@ if(isset($_POST["steam_url"]) && preg_match("#^(https?://)?store\.steampowered\.
 
 		
 		/***** MODIFICIAR PONER ESTO EN OTRO LADO O OOO *********/
-		$steamPriceReal = round($product->finalPrice * 1.21, 1);
-		$finalPrice = round($steamPriceReal * 1.15);
+		$steamFirstPriceReal = round($product->firstPrice * 1.21, 1);
+		$steamFinalPriceReal = round($product->finalPrice * 1.21, 1);
+
+		$steamBuyFirstPrice = round($steamFirstPriceReal * 1.15);
+		$steamBuyFinalPrice = round($steamFinalPriceReal * 1.15);
+
+
+		if(isset($_POST["source"]) && $_POST["source"] == "extension")
+			$source = "extension";
+		else
+			$source = "form";
 
 
 		saveProductQuoteInDb(
@@ -23,7 +32,8 @@ if(isset($_POST["steam_url"]) && preg_match("#^(https?://)?store\.steampowered\.
 			$product->firstPrice,
 			$product->finalPrice,
 			$product->discount,
-			$finalPrice
+			$steamBuyFinalPrice,
+			$source
 		);
 
 
@@ -32,8 +42,10 @@ if(isset($_POST["steam_url"]) && preg_match("#^(https?://)?store\.steampowered\.
 			"data" => [
 				"product_name" => $product->name,
 				"product_discount" => $product->discount,
-				"product_steamprice" => $steamPriceReal,
-				"product_finalprice" => $finalPrice
+				"product_steam_firstprice" => $steamFirstPriceReal,
+				"product_steam_finalprice" => $steamFinalPriceReal,
+				"product_steambuy_firstprice" => $steamBuyFirstPrice,
+				"product_steambuy_finalprice" => $steamBuyFinalPrice
 			]
 		];
 
@@ -49,7 +61,7 @@ else {
 	$response["error_text"] = "La URL de Steam proporcionada es incorrecta.";
 }
 
-
+header('Access-Control-Allow-Origin: *');
 header('Content-Type: application/json');
 echo json_encode($response);
 
@@ -66,12 +78,12 @@ echo json_encode($response);
  * @param  float $quotedFinalPrice 
  * @return null                   
  */
-function saveProductQuoteInDb($url, $name, $steamFirstPrice, $steamFinalPrice, $steamDiscount, $quotedFinalPrice)
+function saveProductQuoteInDb($url, $name, $steamFirstPrice, $steamFinalPrice, $steamDiscount, $quotedFinalPrice, $source)
 {
 	global $con;
 
-	$sql = "INSERT INTO `quotes` (`id`, `date`, `product_url`, `product_name`, `current_steam_firstprice_ars`, `current_steam_finalprice_ars`, `current_steam_discount`, `quoted_final_price_ars`) VALUES 
-	(NULL, NOW(), '".mysqli_real_escape_string($con, $url)."', '".mysqli_real_escape_string($con, $name)."', ".$steamFirstPrice.", ".$steamFinalPrice.", ".($steamDiscount ? 1 : 0).", ".$quotedFinalPrice.");";
+	$sql = "INSERT INTO `quotes` (`id`, `date`, `product_url`, `product_name`, `current_steam_firstprice_ars`, `current_steam_finalprice_ars`, `current_steam_discount`, `quoted_final_price_ars`, `source`) VALUES 
+	(NULL, NOW(), '".mysqli_real_escape_string($con, $url)."', '".mysqli_real_escape_string($con, $name)."', ".$steamFirstPrice.", ".$steamFinalPrice.", ".($steamDiscount ? 1 : 0).", ".$quotedFinalPrice.", '".mysqli_real_escape_string($con, $source)."');";
 
 	mysqli_query($con, $sql);
 }

@@ -82,8 +82,8 @@ $(document).ready(function(e) {
 						if(response.success) {
 							$(".insert-url-label").hide();
 							$("#game_name").text(response.data.product_name);
-							$("#game_final_ars_price").text("$" + response.data.product_finalprice + " ARS");
-							$("#game_steam_real_price").text("$" + response.data.product_steamprice + " ARS");
+							$("#game_final_ars_price").text("$" + response.data.product_steambuy_finalprice + " ARS");
+							$("#game_steam_real_price").text("$" + response.data.product_steam_finalprice + " ARS");
 							if(response.data.product_discount)
 								$("#limited_time_offer_warning").show();
 						}
@@ -92,6 +92,7 @@ $(document).ready(function(e) {
 						}
 					},
 					error: function(jqXhr, textStatus, errorMessage) {
+						//console.log(jqXhr, textStatus, errorMessage);
 						alert("Ocurrió un error procesando la URL del juego.");
 					},
 					complete:function() {
