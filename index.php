@@ -67,6 +67,10 @@ $steam_sales_featured_items = 9;
                 border: none;
                 margin-bottom: 30px
             }
+
+            .open-announcement a {
+                color: #6ac3ec;
+            }
         </style>
 
 		<script type="text/javascript" src="global_scripts/js/jquery-1.8.3.min.js"></script>
@@ -86,10 +90,9 @@ $steam_sales_featured_items = 9;
         	
             <div class="main_content">
 
-                <div class="alert alert-info open-announcement alert-dismissible">
-                    <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true" style="color: #EEE">&times;</span></button>
-                    <h3 style="font-size: 18px; margin-bottom: 10px">Habilitamos el servicio de compra de juegos en Steam!</h3>
-                    <p>Debido a los cambios recientes en agosto de 2019 en la tienda de Steam, decidimos volver a comenzar a ofrecer el servicio de reventa de juegos por los principales medios de pago en efectivo.</p>
+                <div class="alert alert-info open-announcement">
+                    <h3 style="font-size: 18px; margin-bottom: 10px">Ya salió nuestra extensión para Google Chrome!</h3>
+                    <p>Consultá los precios de Steam pagando efectivo por SteamBuy sin salir de la tienda de Steam. <a href="https://chrome.google.com/webstore/detail/extension-steambuy/dfbiihalonajbkangjiinheiebfgahmd?hl=es" target="_blank">Ver en Chrome Web Store</a>.</p>
                 </div>
 
                 <div class="panel panel-default" style="margin-bottom: 40px">
