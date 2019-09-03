@@ -100,6 +100,7 @@ if(isAdminLoggedIn())
                     <ol>
                         <h4>Términos generales</h4>
 
+                        <li>SteamBuy no está afiliado de ninguna manera con Valve Corporation.</li>
                         <li>SteamBuy ofrece un servicio de reventa a pedido de licencias de software de videojuegos (productos) de la plataforma de Steam. Esto es, SteamBuy realiza la compra del mismo en la tienda de Steam y lo envía al comprador.</li>
                         <li>El precio de venta final de cada producto ofrecido por SteamBuy al público, es un precio en pesos argentinos, determinado por el precio final del producto en la tienda de Steam (convertido a pesos en caso que fuera en dólares) más una comisión fija determinada por SteamBuy.</li>
                         <li>Los pedidos se realizan desde el formulario de compra de juegos, en donde el comprador debe ingresar sus datos de contacto junto con la URL del producto deseado en la tienda de Steam.</li>
