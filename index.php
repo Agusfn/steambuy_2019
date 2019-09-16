@@ -90,10 +90,10 @@ $steam_sales_featured_items = 9;
         	
             <div class="main_content">
 
-                <div class="alert alert-info open-announcement">
+                <!--div class="alert alert-info open-announcement">
                     <h3 style="font-size: 18px; margin-bottom: 10px">Ya salió nuestra extensión para Google Chrome!</h3>
                     <p>Consultá los precios de Steam pagando efectivo por SteamBuy sin salir de la tienda de Steam. <a href="https://chrome.google.com/webstore/detail/extension-steambuy/dfbiihalonajbkangjiinheiebfgahmd?hl=es" target="_blank">Ver en Chrome Web Store</a>.</p>
-                </div>
+                </div-->
 
                 <div class="panel panel-default" style="margin-bottom: 40px">
                     <div class="panel-body" style="padding: 35px 40px">
