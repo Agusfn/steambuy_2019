@@ -97,7 +97,7 @@ foreach($lines as $line)
 }
 
 
-file_put_contents("payments_webhook.txt", date("d/m/Y H:i:s").". Registrados: ".$registeredPayments.". Ya registrados: ".$alreadyRegistered.". No del sitio: ".$nonWebsitePayments.". Checksum failed: ".$checksumFailed.". Totales: ".$totalPayments.". Operaciones: ".(sizeof($lines)-1)."\r\n", FILE_APPEND);
+file_put_contents("payments_webhook.txt", date("d/m/Y H:i:s").". CD: ".CD_ACCOUNT.". Registrados: ".$registeredPayments.". Ya registrados: ".$alreadyRegistered.". No del sitio: ".$nonWebsitePayments.". Checksum failed: ".$checksumFailed.". Totales: ".$totalPayments.". Operaciones: ".(sizeof($lines)-1)."\r\n", FILE_APPEND);
 
 echo "OK";
 
