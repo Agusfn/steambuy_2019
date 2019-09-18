@@ -382,9 +382,9 @@ class Purchase
 		//if(floatval($config["cd2_balance"]) < (0 - 1000)) $rand[] = $this->CD_ID[2];	
 		//$cd_to_send = $rand[array_rand($rand)];
 
-		// Generar cupon a cta rfn07
+		// Generar cupon a cta agusfn
 
-		$paymentTicketLink = get_url("https://www.cuentadigital.com/api.php?id=545437&precio=".$monto."&venc=3&codigo=".$codigo."&hacia=".$mail."&concepto=Venta+de+productos+digitales");		
+		$paymentTicketLink = get_url("https://www.cuentadigital.com/api.php?id=545364&precio=".$monto."&venc=3&codigo=".$codigo."&hacia=".$mail."&concepto=Venta+de+productos+digitales");		
 		
 		if(strpos($paymentTicketLink, "https://www.cuentadigital.com/verfactura.php?id=") !== false) { 
 			return $paymentTicketLink;
