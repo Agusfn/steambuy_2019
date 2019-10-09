@@ -91,8 +91,8 @@ $steam_sales_featured_items = 9;
             <div class="main_content">
 
                 <div class="alert alert-info open-announcement">
-                    <h3 style="font-size: 18px; margin-bottom: 10px">Ya disponible extensión para Firefox!</h3>
-                    <p>Consultá los precios de los juegos de Steam pagando efectivo por SteamBuy sin salir de la tienda de Steam. <a href="https://addons.mozilla.org/es/firefox/addon/extension-steambuy/" target="_blank">Ver en Firefox Add-ons</a>.</p>
+                    <h3 style="font-size: 18px; margin-bottom: 10px">Extensiones para Firefox y Opera ya disponibles!</h3>
+                    <p>Consultá los precios de los juegos de Steam pagando efectivo por SteamBuy sin salir de la tienda de Steam. <a href="extension">Más información</a>.</p>
                 </div>
 
                 <div class="panel panel-default" style="margin-bottom: 40px">
