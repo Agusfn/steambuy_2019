@@ -16,8 +16,8 @@ if(isset($_POST["steam_url"]) && preg_match("#^(https?://)?store\.steampowered\.
 		$steamFirstPriceReal = round($product->firstPrice * 1.21, 1);
 		$steamFinalPriceReal = round($product->finalPrice * 1.21, 1);
 
-		$steamBuyFirstPrice = round($steamFirstPriceReal * 1.15);
-		$steamBuyFinalPrice = round($steamFinalPriceReal * 1.15);
+		$steamBuyFirstPrice = round($steamFirstPriceReal * 1.20);
+		$steamBuyFinalPrice = round($steamFinalPriceReal * 1.20);
 
 
 		if(isset($_POST["source"]) && $_POST["source"] == "extension")

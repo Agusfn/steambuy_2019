@@ -45,7 +45,7 @@ if($product->success) {
 
 	/***** PUT IN ANOTHER PLACEEE **********/
 	$steamPriceReal = round($product->finalPrice * 1.21, 1);
-	$finalPriceArs = round($steamPriceReal * 1.15);
+	$finalPriceArs = round($steamPriceReal * 1.20);
 	
 
 	$purchase = new Purchase($con);
