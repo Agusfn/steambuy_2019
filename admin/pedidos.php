@@ -56,6 +56,8 @@ if(isset($_GET["order"])) {
 		$extra_query .= " ORDER BY `product_arsprice` ASC";
 	} else if($_GET["order"] == 4) {
 		$extra_query .= " ORDER BY `product_arsprice` DESC";
+	} else if($_GET["order"] == 5) {
+		$extra_query .= " ORDER BY `order_payment_time` DESC";
 	} else {
 		if($type == 1) $extra_query .= " ORDER BY order_number DESC";	
 		else $extra_query .= " ORDER BY order_status_change DESC";	
