@@ -292,7 +292,7 @@ if(isset($_GET["orderid"])) {
 							if($orderData["order_send_method"] == 1) {
 								?>
                                 <td colspan="3"><button class="btn btn-success" id="copy_steamurl_btn" data-toggle="tooltip" data-placement="top" title="Copiar SteamURL"><i class="fa fa-clipboard"></i></button>
-                                &nbsp;&nbsp;SteamURL: <input type="text" class="form-control" id="client_steamurl" style="display:inline-block;width:450px;" value="<?php echo $orderData["buyer_steam_url"]; ?>" readonly  />
+                                &nbsp;&nbsp;SteamURL: <a href="<?php echo $orderData["buyer_steam_url"]; ?>"><?php echo $orderData["buyer_steam_url"]; ?></a>
                                 </td>
                                 <?php	
 							}

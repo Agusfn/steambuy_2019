@@ -7,6 +7,10 @@ var blacklistedGames = [
 					["sub","28987","No es posible vender el GTA Complete."],
 					["app", "730", "No es posible vender CS:GO (<a href='soporte/preguntas-frecuentes/#venta-csgo'>más info</a>)."],
 					["sub", "54029", "No es posible vender CS:GO (<a href='soporte/preguntas-frecuentes/#venta-csgo'>más info</a>)."],
+					["app", "383150", "No es posible vender el Dead Island"],
+					["sub", "71952", "No es posible vender el Dead Island"],
+					["app", "383180", "No es posible vender el Dead Island"],
+					["sub", "71968", "No es posible vender el Dead Island"]
 					];
 
 
