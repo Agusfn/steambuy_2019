@@ -101,6 +101,8 @@ $steam_sales_featured_items = 9;
                         <form action="procesar_formulario.php" method="POST" id="buy_game_form">
                             <h3 style="margin-bottom: 25px">Formulario de compra de juegos de Steam</h3>
 
+                            <div class="alert alert-warning" style="margin-bottom: 25px"><span class="glyphicon glyphicon-exclamation-sign"></span> Creación de nuevos pedidos deshabilitada temporalmente. Disculpa las molestias.</div>
+
                             <h1 style="margin-bottom: 10px; font-size: 15px">Compra juegos de Steam por cupón de pago en pesos argentinos (Rapipago, Pago Fácil, Bapro, Ripsa, etc).</h1>
                             <h5 style="margin-bottom: 30px;">Para saber cómo obtener el precio final de un juego o cómo comprarlo, <a href="soporte/preguntas-frecuentes/#como-comprar-juego-formulario" target="_blank">revisa la siguiente guía</a>.</h5>
 
@@ -155,7 +157,7 @@ $steam_sales_featured_items = 9;
 
                                     <div style="text-align: right;">
                                         <label><input type="checkbox" id="terms_checkbox"> Acepto los <a href="condiciones" target="_blank">términos y condiciones de compra</a>.</label>
-                                        <button type="button" class="btn btn-primary" id="buy_form_submit">Generar pedido y boleta de pago&nbsp;&nbsp;<span class="glyphicon glyphicon-barcode"></span></button>
+                                        <button type="button" class="btn btn-primary" id="buy_form_submit" disabled="">Generar pedido y boleta de pago&nbsp;&nbsp;<span class="glyphicon glyphicon-barcode"></span></button>
                                     </div>
 
                                 </div>
