@@ -20,6 +20,12 @@ RewriteRule ^(.*)$ https://%1/$1 [R=301,L]
  RewriteRule ^.*$ https://%{SERVER_NAME}%{REQUEST_URI} [R,L]
 
 
+RewriteCond %{REQUEST_URI} !^/deshabilitado.html$
+RewriteCond %{REQUEST_URI} !\.(gif|jpe?g|png|css|js)$
+RewriteRule .* /deshabilitado.html [L,R=302]
+
+
+
 # Mod_rewrite para paginas de juegos
 RewriteCond %{REQUEST_FILENAME} !-f
 #RewriteRule ^(.*)([^/])$        /$1$2/ [L,R=301]
